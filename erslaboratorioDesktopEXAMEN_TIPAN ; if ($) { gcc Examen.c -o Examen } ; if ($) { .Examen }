@@ -1,0 +1,17 @@
+[33mcommit 6de093333fc6b3ddc0e80adc2f8d053565e28616[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: JHONATAN TIPAN <jhonatan.tipan@udla.edu.ec>
+Date:   Wed Jan 24 16:23:32 2024 -0500
+
+    case 2: se imprimo los datos del archivo.txt
+
+[33mcommit 0ce11e1df66641fb702ba35ac771edfd39cd74da[m
+Author: JHONATAN TIPAN <jhonatan.tipan@udla.edu.ec>
+Date:   Wed Jan 24 16:04:57 2024 -0500
+
+    Implemetacion de la logica (abrir archivo, identificar el dato, pedir el dato)
+
+[33mcommit 22c2af0030181297b2d606206a97af26781d0252[m
+Author: JHONATAN TIPAN <jhonatan.tipan@udla.edu.ec>
+Date:   Wed Jan 24 15:22:59 2024 -0500
+
+    Se escogio la estructura que mejor se acople al progrma, se vinculo struct
