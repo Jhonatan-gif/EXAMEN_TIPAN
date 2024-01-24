@@ -1,5 +1,3 @@
-//Construir un programa que tenga 3 opciones 1ingresardatos (Informacion del producto(codigo del producto, nombre del produtos, marca, cantidad,presio de compra)), 2 mostrardatos(mostrar los datos en pantalla), 3salir
-
 #include <stdio.h>
 
 struct producto {
@@ -51,9 +49,18 @@ int main() {
                
                 break;
 
+            //se imprime los datos del archivo
             case 2:
                 printf("Mostrando datos\n");
-                
+                archivo = fopen("productos.txt", "r");
+                if (archivo == NULL) {
+                    printf("No se pudo abrir el archivo\n");
+                } else {
+                    while (fscanf(archivo, "%s %s %s %d %f", p.codigo, p.nombreProd, p.marca, &p.cantidad, &p.precioCompra) != EOF) {
+                        printf("%s\t%s\t%s\t%d\t%.2f\n", p.codigo, p.nombreProd, p.marca, p.cantidad, p.precioCompra);
+                    }
+                    fclose(archivo);
+                }
                 break;
 
             case 3:
